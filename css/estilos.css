@@ -1,0 +1,354 @@
+/* Estilos Globais: Define cores e modelo de caixa para todos os elementos */
+*,
+*::before,
+*::after {
+    --azul-escuro: #154580;
+    --azul-medio: #3970BE;
+    --azul-claro: #E5F1FF;
+    --cinza-texto: #444444;
+    --cinza-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+/* Estilos do Corpo da Página */
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--azul-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* CABEÇALHO */
+
+/* Container do Cabeçalho: Define o fundo, altura, largura e padding */
+.cabecalho__container {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+}
+
+/* Logo no Cabeçalho: Define a imagem de fundo, espaçamento e cursor */
+.logo__item {
+    background-image: url(../img/cabecalho/Logo.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+/* Campo de Pesquisa: Define a largura, altura, borda, tamanho da fonte e padding */
+.pesquisar__input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding: 3px 8px;
+}
+
+/* Rótulo de Pesquisa: Define a imagem de fundo, borda, cor de fundo e padding */
+.pesquisar__label {
+    background-image: url(../img/cabecalho/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #F9F9F9;
+    border-left: none;
+    padding: 8px 18px 5px;
+    cursor: pointer;
+}
+
+/* Ícone de Áudio no Cabeçalho: Define a imagem de fundo e esconde o ícone */
+.cabecalho__audio {
+    background-image: url(../img/cabecalho/mic.png);
+    padding: 20px;
+    display: none;
+}
+
+/* Ícone de Vídeos no Cabeçalho: Define a imagem de fundo e padding */
+.cabecalho__videos {
+    background-image: url(../img/cabecalho/video_call.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Ícone de Apps no Cabeçalho: Define a imagem de fundo e padding */
+.cabecalho__apps {
+    background-image: url(../img/cabecalho/apps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+/* Ícone de Notificações no Cabeçalho: Define a imagem de fundo e padding */
+.cabecalho__notificacoes {
+    background-image: url(../img/cabecalho/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+/* Ícone de Avatar no Cabeçalho: Define a imagem de fundo e padding */
+.cabecalho__avatar {
+    background-image: url(../img/cabecalho/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+/* MENU LATERAL */
+
+/* Container do Menu Lateral: Define a cor de fundo e tamanho da fonte */
+.menu__container {
+    background-color: var(--azul-escuro);
+    font-size: 14px;
+}
+
+/* Itens do Menu Lateral ao Passar o Mouse: Define a cor de fundo e transição */
+.menu__itens:hover {
+    background-color: var(--azul-medio);
+    transition: .5s;
+}
+
+/* Ícones no Menu Lateral: Define a imagem de fundo para cada ícone */
+.icone__inicio::before {
+    content: url(../img/menu/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../img/menu/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../img/menu/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../img/menu/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../img/menu/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../img/menu/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../img/menu/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../img/menu/thumb_up_alt.png);
+}
+
+.icone__alura::before {
+    content: url(../img/menu/Avatar_Alura.png);
+}
+
+.icone__gaveta::before {
+    content: url(../img/menu/Avatar_Gaveta.png);
+}
+
+.icone__ballerini::before {
+    content: url(../img/menu/Avatar_Rafa.png);
+}
+
+.icone__iamarino::before {
+    content: url(../img/menu/Avatar_Atila.png);
+}
+
+.icone__souto::before {
+    content: url(../img/menu/Avatar_Souto.png);
+}
+
+.icone__nerd::before {
+    content: url(../img/menu/Avatar_Jovem_Nerd.png);
+}
+
+.icone__deschamps::before {
+    content: url(../img/menu/Avatar_Deschamps.png);
+}
+
+.icone__mostrar::before {
+    content: url(../img/menu/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../img/menu/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../img/menu/filmes.png);
+}
+
+.icone__jogos::before {
+    content: url(../img/menu/jogos.png);
+}
+
+/* SECAO SUPERIOR */
+
+/* Container da Seção Superior: Define a altura, cor do texto, tamanho da fonte, cor de fundo, padding e posicionamento fixo */
+.superior__secao__container {
+    height: 63px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--azul-claro);
+    padding: 0 20px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+}
+
+/* Itens da Seção Superior: Define a cor do texto, tamanho da fonte, cor de fundo, bordas arredondadas e padding */
+.superior__item {
+    color: var(--cinza-texto);
+    font-size: 16px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* Itens da Seção Superior ao Passar o Mouse: Define a cor do texto, cor de fundo e transição */
+.superior__item:hover {
+    color: white;
+    background-color: var(--azul-escuro);
+    transition: .5s;
+}
+
+/* SEÇÃO VÍDEOS */
+
+/* Container dos Vídeos: Define a cor do texto e padding */
+.videos__container {
+    color: black;
+    padding: 153px 20px 10px 20px;
+}
+
+/* Itens dos Vídeos ao Passar o Mouse: Define a transformação, cor de fundo e transição */
+.videos__item:hover {
+    transform: scale(1.3);
+    background-color: var(--azul-claro);
+    z-index: 2;
+    transition: .5s;
+}
+
+/* Descrição dos Vídeos - Títulos: Define o peso da fonte e cor do texto */
+.descricao-video h3 {
+    font-weight: 700;
+    color: #444444;
+}
+
+/* Descrição dos Vídeos - Parágrafos: Define o tamanho da fonte e cor do texto */
+.descricao-video p {
+    font-size: 14px;
+    color: #444444;
+}
+
+/* RODAPÉ */
+
+/* Container do Rodapé: Define a largura, altura, cor do texto, altura da linha, tamanho da fonte e cor de fundo */
+.rodape__container {
+    width: 100%;
+    height: 875px;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Título do Rodapé: Define a cor do texto, peso da fonte e padding */
+.rodape__titulo {
+    color: var(--azul-medio);
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+/* Informações do Projeto no Rodapé: Define o layout flexível, altura, alinhamento e cor do texto */
+.rodape-info-project {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #154580;
+}
+
+/* Estilos Responsivos para Telas a partir de 834px */
+
+/* Ajustes para o Corpo da Página */
+@media(min-width: 834px) {
+    body {
+        height: 100vh;
+    }
+
+    /* Ajustes para o Menu Lateral */
+    .menu__container {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+
+    /* Ajustes para a Seção Superior */
+    .superior__secao__container {
+        border-top: var(--azul-medio) 1px solid;
+        border-bottom: var(--azul-medio) 1px solid;
+        width: auto;
+        left: 82px;
+    }
+
+    /* Ajustes para a Seção de Vídeos */
+    .videos__container {
+        padding-left: 90px;
+        padding-right: 17px;
+    }
+
+    .videos__item:hover {
+        transform: scale(1.3);
+    }
+
+    /* Ajustes para o Rodapé */
+    .rodape__container {
+        height: 420px;
+        padding-left: 74px;
+    }
+}
+
+/* Estilos Responsivos para Telas a partir de 1440px */
+
+/* Ajustes para a Seção Superior */
+@media(min-width: 1440px) {
+    .superior__secao__container {
+        left: 247px;
+    }
+
+    /* Ajustes para o Menu Lateral */
+    .menu__lista {
+        border-bottom: 1.5px solid var(--azul-medio);
+    }
+
+    /* Ajustes para a Seção de Vídeos */
+    .videos__container {
+        padding-right: 10px;
+        padding-left: 248px;
+    }
+
+    /* Ajustes para o Rodapé */
+    .rodape__container {
+        padding-left: 240px;
+        height: 225px;
+    }
+}
