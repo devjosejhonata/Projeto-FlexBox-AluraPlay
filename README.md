@@ -14,5 +14,6 @@ O Layout e css do projeto foi entregue parcialmente pronto, sendo feito somente 
 : Organizei o código;
 
 : Fiz a insersão de comentários para fácil entendimento de quem acessar o repositório;
+
 ![img Projeto - FlexBox-AluraPlay](https://github.com/user-attachments/assets/af82e2aa-24d9-457f-813c-b9ebe062af36)
 
