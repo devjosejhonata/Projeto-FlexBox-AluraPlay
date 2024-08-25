@@ -5,8 +5,8 @@ Projeto simples em Html, Css. Focado somente em praticar todos os conceitos de F
 
 O Layout e css do projeto foi entregue parcialmente pronto, sendo feito somente a estruturação e demais atividades;
 
-- Segue abaixo o que foi feito -
-: Fiz a estruturação do projeto utilizando Flexbox; 
-: Fiz a parte da responsividade; 
-: Organizei o código; 
+- Segue abaixo o que foi feito
+: Fiz a estruturação do projeto utilizando Flexbox;
+: Fiz a parte da responsividade;
+: Organizei o código;
 : Fiz a insersão de comentários para fácil entendimento de quem acessar o repositório;
